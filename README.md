@@ -1,0 +1,2 @@
+# Banking Network System
+ This project involves the design and implementation of a comprehensive networking system for ABC Company Ltd, a Banking and Insurance firm, in preparation for their expansion into the Maldives market. The project includes the modeling and visualization of the network topology using software tool Draw.io. The network topology is implemented using Cisco Packet Tracer, with each floor of the four-story office building in Malé, Maldives, having a router connecting switches and utilizing OSPF as the routing protocol.
