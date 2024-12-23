@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F2-SW
+banner motd #This is 2nd Floor Main L3 Switch#
+
+line console 0
+password CiscoF2SW
+login
+exit
+
+line vty 0 15
+password CiscoF2SWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoF2SWen
+
+service password-encryption
+
+do write 
+
+exit
+

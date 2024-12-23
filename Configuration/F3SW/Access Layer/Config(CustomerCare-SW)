@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F3-CUST-SW
+banner motd #This is 3rd Floor - Logistics Div Switch#
+
+line console 0
+password CiscoCUSTSW
+login
+exit
+
+line vty 0 15
+password CiscoCUSTSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoCUSTSWen
+
+service password-encryption
+
+do write 
+
+exit
+

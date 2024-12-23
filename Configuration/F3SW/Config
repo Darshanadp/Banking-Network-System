@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F3-SW
+banner motd #This is 3rd Floor Main L3 Switch#
+
+line console 0
+password CiscoF3SW
+login
+exit
+
+line vty 0 15
+password CiscoF3SWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoF3SWen
+
+service password-encryption
+
+do write 
+
+exit
+

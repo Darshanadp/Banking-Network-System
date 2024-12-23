@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F2-Acct-SW
+banner motd #This is 2nd Floor - Accounting Div Switch#
+
+line console 0
+password CiscoACCTSW
+login
+exit
+
+line vty 0 15
+password CiscoACCTSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoACCTSWen
+
+service password-encryption
+
+do write 
+
+exit
+

@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F4-ICT-SW
+banner motd #This is 4th Floor - ICT Div Switch#
+
+line console 0
+password CiscoICTSW
+login
+exit
+
+line vty 0 15
+password CiscoICTSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoICTSWen
+
+service password-encryption
+
+do write 
+
+exit
+

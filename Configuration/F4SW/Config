@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F4-SW
+banner motd #This is 4th Floor Main L3 Switch#
+
+line console 0
+password CiscoF4SW
+login
+exit
+
+line vty 0 15
+password CiscoF4SWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoF4SWen
+
+service password-encryption
+
+do write 
+
+exit
+

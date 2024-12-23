@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F4-Server-SW
+banner motd #This is 4th Floor - Server Room Switch#
+
+line console 0
+password CiscoSVRSW
+login
+exit
+
+line vty 0 15
+password CiscoSVRSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoSVRSWen
+
+service password-encryption
+
+do write 
+
+exit
+

@@ -1,0 +1,26 @@
+en
+config t
+
+hostname F3-GUEST-SW
+banner motd #This is 3rd Floor - Guest Area Switch#
+
+line console 0
+password CiscoGUESTSW
+login
+exit
+
+line vty 0 15
+password CiscoGUESTSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoGUESTSWen
+
+service password-encryption
+
+do write 
+
+exit
+
