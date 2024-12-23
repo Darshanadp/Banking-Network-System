@@ -1,0 +1,25 @@
+en
+config t
+
+hostname F1-Res-SW
+banner motd #This is 1st Floor - Research Div Switch#
+
+line console 0
+password CiscoRESSW
+login
+exit
+
+line vty 0 15
+password CiscoRESSWvty
+login
+exit
+
+no ip domain-lookup
+
+enable password CiscoRESSWen
+
+service password-encryption
+
+do write 
+
+exit
